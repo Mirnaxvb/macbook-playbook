@@ -1,0 +1,6 @@
+---
+homebrew_taps:
+  - mongodb/brew
+
+homebrew_apps:
+  - mongodb-community@5.0
