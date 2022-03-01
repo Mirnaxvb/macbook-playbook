@@ -2,6 +2,9 @@
 alias zsh="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
+# Macbook playbook
+alias update-mac="ansible-playbook ~/code/SideProjects/macbook-playbook/main.yml"
+
 # Navigation
 alias code="cd ~/code"
 alias bert="cd ~/code/Projects/bert"
@@ -9,9 +12,9 @@ alias sam="cd ~/code/Projects/sam-server"
 alias portal="cd ~/code/Projects/portal.socialblue.com"
 alias tommie="cd ~/code/Projects/tommie"
 
-#MongoDB
-alias start_mongo="brew services start mongodb-community@5.0"
-alias stop_mongo="brew services stop mongodb-community@5.0"
+# MongoDB
+alias start-mongo="brew services start mongodb-community@5.0"
+alias stop-mongo="brew services stop mongodb-community@5.0"
 
 # Laravel
 alias pa="php artisan"
@@ -36,4 +39,4 @@ alias check="php vendor/bin/ecs check --config=vendor/socialblue/php-code-style/
 alias fix="php vendor/bin/ecs check --fix --config=vendor/socialblue/php-code-style/easy-coding-standard.php --match-git-diff"
 alias ffix="php vendor/bin/ecs check --fix --config=vendor/socialblue/php-code-style/easy-coding-standard.php"
 alias stan="/vendor/bin/phpstan analyse app tests -c ../../Packages/php-code-style/phpstan.neon"
-alias stan_baseline="./vendor/bin/phpstan analyse --generate-baseline -c ../../Packages/php-code-style/phpstan.neon"
+alias stan-baseline="./vendor/bin/phpstan analyse --generate-baseline -c ../../Packages/php-code-style/phpstan.neon"
