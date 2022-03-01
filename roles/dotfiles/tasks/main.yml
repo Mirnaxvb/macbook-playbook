@@ -6,6 +6,7 @@
     state: link
     mode: 0644
     force: yes
+    follow: false
   become: false
   with_items: "{{ dotfiles_files }}"
 

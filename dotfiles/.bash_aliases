@@ -9,6 +9,10 @@ alias sam="cd ~/code/Projects/sam-server"
 alias portal="cd ~/code/Projects/portal.socialblue.com"
 alias tommie="cd ~/code/Projects/tommie"
 
+#MongoDB
+alias start_mongo="brew services start mongodb-community@5.0"
+alias stop_mongo="brew services stop mongodb-community@5.0"
+
 # Laravel
 alias pa="php artisan"
 alias pam="php artisan migrate:fresh --env=testing"
