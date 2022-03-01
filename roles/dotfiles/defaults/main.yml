@@ -1,0 +1,7 @@
+---
+dotfiles_repo_local_destination: "~/Code/SideProjects/macbook-playbook/dotfiles"
+dotfiles_home: "~"
+dotfiles_files:
+  - .zshrc
+  - .bash_aliases
+  - .bash_funtions

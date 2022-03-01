@@ -1,0 +1,11 @@
+---
+- name: Link dotfiles into home folder.
+  file:
+    src: "{{ dotfiles_repo_local_destination }}/{{ item }}"
+    dest: "{{ dotfiles_home }}/{{ item }}"
+    state: link
+    mode: 0644
+    force: yes
+  become: false
+  with_items: "{{ dotfiles_files }}"
+

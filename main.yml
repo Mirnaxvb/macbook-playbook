@@ -1,0 +1,11 @@
+---
+- hosts: all
+
+  vars_files:
+    - config.yml
+
+  roles:
+    - role: dotfiles
+      when: configure_dotfiles
+      tags: ['dotfiles']
+
