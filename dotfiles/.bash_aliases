@@ -1,6 +1,8 @@
-# ZSH
+# Dotfiles
 alias zsh="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias aliases="nvim ~/.bash_aliases"
+alias functions="nvim ~/.bash_functions"
 
 # Macbook playbook
 alias update-mac="ansible-playbook ~/code/SideProjects/macbook-playbook/main.yml"
@@ -11,6 +13,9 @@ alias bert="cd ~/code/Projects/bert"
 alias sam="cd ~/code/Projects/sam-server"
 alias portal="cd ~/code/Projects/portal.socialblue.com"
 alias tommie="cd ~/code/Projects/tommie"
+alias redirect="cd ~/code/Projects/redirect"
+alias tracker="cd ~/code/Projects/tracker"
+
 
 # MongoDB
 alias start-mongo="brew services start mongodb-community@5.0"
