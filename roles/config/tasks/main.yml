@@ -1,0 +1,11 @@
+---
+- name: Link config into home folder.
+  file:
+    src: "{{ config_repo_local_destination}}/{{ item }}"
+    dest: "{{ config_home}}/{{ item }}"
+    state: link
+    mode: 0644
+    force: yes
+    follow: false
+  become: false
+  with_items: "{{ config_directories }}"

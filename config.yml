@@ -1,2 +1,3 @@
 ---
 configure_dotfiles: true
+configure_config: true

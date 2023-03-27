@@ -8,4 +8,6 @@
     - role: dotfiles
       when: configure_dotfiles
       tags: ['dotfiles']
-
+    - role: config
+      when: configure_config
+      tags: ['config']

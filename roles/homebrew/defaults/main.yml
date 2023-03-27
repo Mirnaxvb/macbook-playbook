@@ -4,3 +4,4 @@ homebrew_taps:
 
 homebrew_apps:
   - mongodb-community@5.0
+  - helix
