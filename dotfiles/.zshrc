@@ -85,6 +85,7 @@ plugins=(
   kubectl
   artisan
   zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -129,3 +130,5 @@ if [ -f '/Users/m.vanbalgooi/Documents/google-cloud-sdk/path.zsh.inc' ]; then . 
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/m.vanbalgooi/Documents/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/m.vanbalgooi/Documents/google-cloud-sdk/completion.zsh.inc'; fi
+
+source /Users/m.vanbalgooi/.docker/init-zsh.sh || true # Added by Docker Desktop
