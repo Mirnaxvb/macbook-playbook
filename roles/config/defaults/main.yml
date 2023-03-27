@@ -1,6 +1,6 @@
 ---
 config_repo_local_destination: "~/Code/SideProjects/macbook-playbook/config"
-config_home: "~"
+config_home: "~/.config"
 config_directories:
   - nvim
   - helix
