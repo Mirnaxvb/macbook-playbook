@@ -5,6 +5,7 @@ alias aliases="hx ~/.bash_aliases"
 alias functions="hx ~/.bash_functions"
 
 # Macbook playbook
+alias config-mac="hx ~/code/SideProjects/macbook-playbook"
 alias update-mac="ansible-playbook ~/code/SideProjects/macbook-playbook/main.yml"
 
 # Dev-cli

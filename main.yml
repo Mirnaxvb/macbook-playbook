@@ -11,3 +11,6 @@
     - role: config
       when: configure_config
       tags: ['config']
+    - role: homebrew
+      when: configure_homebrew
+      tags: ['homebrew']

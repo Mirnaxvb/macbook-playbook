@@ -1,3 +1,4 @@
 ---
-configure_dotfiles: true
-configure_config: true
+configure_dotfiles: false
+configure_config: false
+configure_homebrew: true

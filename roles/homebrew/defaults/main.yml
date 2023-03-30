@@ -1,7 +1,31 @@
 ---
 homebrew_taps:
   - mongodb/brew
+  - cask-fonts
 
 homebrew_apps:
+  - composer
   - mongodb-community@5.0
+  - mongosh
+  - neovim
+  - ffmpeg
+  - fd
   - helix
+  - kubernetes-cli
+  - jq
+  - openssl@3
+  - php
+  - php@7.4
+  - php@8.0
+  - php@8.1
+  - zsh
+  - zsh-syntax-highlighting
+
+homebrew_casks:
+  - docker
+  - iterm2
+  - notion
+  - alacritty
+  - font-fira-code
+  - google-chromae
+  
