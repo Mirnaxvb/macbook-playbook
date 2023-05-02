@@ -5,6 +5,7 @@ alias aliases="hx ~/.bash_aliases"
 alias functions="hx ~/.bash_functions"
 
 # Macbook playbook
+alias mac="cd ~/code/SideProjects/macbook-playbook"
 alias config-mac="hx ~/code/SideProjects/macbook-playbook"
 alias update-mac="ansible-playbook ~/code/SideProjects/macbook-playbook/main.yml"
 
@@ -25,6 +26,11 @@ alias tier1="cd ~/code/Projects/Sherlock/tier1"
 alias dev-box="cd ~/code/Projects/Sherlock/dev-box"
 alias sa-adr="cd ~/Documents/SoftwareArchitect/architectural-decision-records"
 alias larashell="cd ~/code/SideProjects/larashell"
+
+# Docker
+alias dr="docker run -it --rm -v $(pwd):/var/www eu.gcr.io/socialblue-infrastructure/sam/phpunit:1.0.0 sh"
+#alias drmi="sudo docker rmi $(sudo docker images | grep portal | tr -s ' ' | awk -F ' ' '{print $1":"$2')"
+
 # MongoDB
 alias start-mongo="brew services start mongodb-community@5.0"
 alias stop-mongo="brew services stop mongodb-community@5.0"
