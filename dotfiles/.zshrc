@@ -1,9 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="$PATH:$HOME/.composer/vendor/bin:$PATH"
-
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 # Python 
-#eval "$(pyenv init --path)"
+eval "$(pyenv init --path)"
 #eval "$(pyenv virtualenv-init -)"
 
 # Path to your oh-my-zsh installation.

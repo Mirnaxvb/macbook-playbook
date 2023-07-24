@@ -12,6 +12,14 @@ alias update-mac="ansible-playbook ~/code/SideProjects/macbook-playbook/main.yml
 # Dev-cli
 alias cleanup-mac="php /Users/m.vanbalgooi/Code/SideProjects/dev-cli/dev-cli cleanup:osx"
 
+# Xdebug
+alias exd80="mv /opt/homebrew/etc/php/8.0/conf.d/ext-xdebug.ini.dis /opt/homebrew/etc/php/8.0/conf.d/ext-xdebug.ini"
+alias dxd80="mv /opt/homebrew/etc/php/8.0/conf.d/ext-xdebug.ini /opt/homebrew/etc/php/8.0/conf.d/ext-xdebug.ini.dis"
+alias exd81="mv /opt/homebrew/etc/php/8.1/conf.d/ext-xdebug.ini.dis /opt/homebrew/etc/php/8.1/conf.d/ext-xdebug.ini"
+alias dxd81="mv /opt/homebrew/etc/php/8.1/conf.d/ext-xdebug.ini /opt/homebrew/etc/php/8.1/conf.d/ext-xdebug.ini.dis"
+alias exd82="mv /opt/homebrew/etc/php/8.2/conf.d/ext-xdebug.ini.dis /opt/homebrew/etc/php/8.2/conf.d/ext-xdebug.ini"
+alias dxd82="mv /opt/homebrew/etc/php/8.2/conf.d/ext-xdebug.ini /opt/homebrew/etc/php/8.2/conf.d/ext-xdebug.ini.dis"
+
 # Navigation
 alias code="cd ~/code"
 alias bert="cd ~/code/Projects/bert"
@@ -46,7 +54,7 @@ alias patf="php artisan test --env=testing --filter "
 alias k="kubectl —cache-dir=/dev/null"
 alias ktest="kubectl config use-context test-cluster"
 alias kproduction="kubectl config use-context production-cluster"
-alias clean-cron="kubectl get pods -n tommie | grep cron | grep -v Completed | awk '{ print $1 }' | xargs kubectl delete pod -n tommie {}"
+alias clean-evicted="kubectl get pods -n sam | grep "Evicted" | awk '{ print $1 }' | xargs kubectl delete pod -n sam"
 
 # Phpstorm
 alias pstorm="open -a PhpStorm ./"
