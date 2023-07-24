@@ -1,0 +1,15 @@
+---
+composer_path: /usr/local/bin/composer
+composer_home_path: ~/.composer
+composer_home_owner: m.vanbalgooi
+composer_home_group: staff
+
+composer_keep_updated: true
+composer_version: ''
+composer_version_branch: '--2'
+composer_add_to_path: true
+
+composer_global_packages:
+  - {name: laravel/valet, release: ^4.1}
+  - {name: laravel/installer, release: ^4.2}
+

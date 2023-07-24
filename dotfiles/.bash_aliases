@@ -7,7 +7,7 @@ alias functions="hx ~/.bash_functions"
 # Macbook playbook
 alias mac="cd ~/code/SideProjects/macbook-playbook"
 alias config-mac="hx ~/code/SideProjects/macbook-playbook"
-alias update-mac="ansible-playbook ~/code/SideProjects/macbook-playbook/main.yml"
+alias update-mac="ansible-playbook ~/code/SideProjects/macbook-playbook/main.yml --ask-become-pass"
 
 # Dev-cli
 alias cleanup-mac="php /Users/m.vanbalgooi/Code/SideProjects/dev-cli/dev-cli cleanup:osx"

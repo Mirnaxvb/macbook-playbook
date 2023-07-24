@@ -14,3 +14,6 @@
     - role: homebrew
       when: configure_homebrew
       tags: ['homebrew']
+    - role: composer
+      when: configure_composer
+      tags: ['composer']

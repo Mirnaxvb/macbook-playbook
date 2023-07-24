@@ -2,3 +2,4 @@
 configure_dotfiles: false
 configure_config: false
 configure_homebrew: true
+configure_composer: true
