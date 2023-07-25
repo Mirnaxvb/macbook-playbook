@@ -5,7 +5,6 @@ homebrew_taps:
 
 homebrew_apps:
   - composer
-  - mongodb-community@5.0
   - mongosh
   - neovim
   - ffmpeg
@@ -15,7 +14,6 @@ homebrew_apps:
   - jq
   - openssl@3
   - php
-  - php@7.4
   - php@8.0
   - php@8.1
   - zsh
@@ -25,7 +23,4 @@ homebrew_casks:
   - docker
   - iterm2
   - notion
-  - alacritty
-  - font-fira-code
-  - google-chromae
   

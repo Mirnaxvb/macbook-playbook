@@ -1,5 +1,5 @@
 ---
-configure_dotfiles: false
-configure_config: false
+configure_dotfiles: true
+configure_config: true
 configure_homebrew: true
 configure_composer: true
