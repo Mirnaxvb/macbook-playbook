@@ -2,7 +2,7 @@
 homebrew_taps:
   - homebrew/core
   - mongodb/brew
-  - hashicorp/tap/terraform
+  - hashicorp/tap
 
 homebrew_apps:
   - composer
@@ -11,6 +11,7 @@ homebrew_apps:
   - ffmpeg
   - fd
   - helix
+  - hashicorp/tap/terraform
   - kubernetes-cli
   - jq
   - openssl@3
