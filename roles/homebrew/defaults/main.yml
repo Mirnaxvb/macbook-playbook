@@ -21,8 +21,4 @@ homebrew_apps:
   - zsh
   - zsh-syntax-highlighting
 
-homebrew_casks:
-  - docker
-  - iterm2
-  - notion
-  
+homebrew_casks: [] 
