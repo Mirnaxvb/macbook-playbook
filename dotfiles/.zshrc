@@ -132,3 +132,12 @@ if [ -f '/Users/m.vanbalgooi/Documents/google-cloud-sdk/path.zsh.inc' ]; then . 
 if [ -f '/Users/m.vanbalgooi/Documents/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/m.vanbalgooi/Documents/google-cloud-sdk/completion.zsh.inc'; fi
 
 source /Users/m.vanbalgooi/.docker/init-zsh.sh || true # Added by Docker Desktop
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
+
+# Custom Key bindings
+# ctrl+f - resume job
+_foreground() { CURSOR=0 LBUFFER+=' fg % 2> /dev/null' && zle accept-line }
+zle -N _foreground
+bindkey '\CF' _foreground

@@ -48,6 +48,7 @@ alias pa="php artisan"
 alias pam="php artisan migrate:fresh --env=testing"
 alias pas="php artisan db:seed --class=TestDatabaseSeeder --env=testing"
 alias pat="php artisan test --env=testing"
+alias pamst="pam && pas && pat"
 alias patf="php artisan test --env=testing --filter "
 
 # Kubectl
