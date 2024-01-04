@@ -5,8 +5,12 @@ injection-regex = "php"
 file-types = ["php",]
 shebangs = ["php"]
 roots = ["composer.json", "index.php"]
-language-server = { command = "intelephense", args = ["--stdio"] }
+language-servers = ["intelephense"]
 indent = { tab-width = 4, unit = "    " }
+
+[language-server.intelephense]
+command = "intelephense"
+args = ["--stdio"]
 
 [[grammar]]
 name = "php"
