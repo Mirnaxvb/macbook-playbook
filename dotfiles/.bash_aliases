@@ -1,13 +1,13 @@
 # Dotfiles
-alias zsh="hx ~/.zshrc"
-alias ohmyzsh="hx ~/.oh-my-zsh"
-alias aliases="hx ~/.bash_aliases"
-alias functions="hx ~/.bash_functions"
+alias zsh="nv ~/.zshrc"
+alias ohmyzsh="nv ~/.oh-my-zsh"
+alias aliases="nv ~/.bash_aliases"
+alias functions="nv ~/.bash_functions"
 
 # Macbook playbook
 alias mac="cd ~/code/SideProjects/macbook-playbook"
-alias config-mac="hx ~/code/SideProjects/macbook-playbook"
-alias update-mac="ansible-playbook ~/code/SideProjects/macbook-playbook/main.yml --ask-become-pass"
+alias config-mac="mac && nv "
+alias update-mac="ansible-playbook ~/code/SideProjects/macbook-playbook/main.yml --ask-become-pass -i ~/code/SideProjects/macbook-playbook/inventory"
 
 # Dev-cli
 alias cleanup-mac="php /Users/m.vanbalgooi/Code/SideProjects/dev-cli/dev-cli cleanup:osx"

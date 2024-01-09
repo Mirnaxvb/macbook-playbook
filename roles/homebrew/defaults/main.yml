@@ -7,18 +7,33 @@ homebrew_taps:
 homebrew_apps:
   - composer
   - mongosh
+  - mongodb-community
+  - nginx
+  - node
+  - node@16
+  - python
+  - sqlite
+  - redis
+  - mysql
+  - brew-php-switcher
   - neovim
+  - dnsmasq
+  - helm
   - ffmpeg
   - fd
-  - helix
   - hashicorp/tap/terraform
   - kubernetes-cli
   - jq
   - openssl@3
   - php
-  - php@8.0
-  - php@8.1
+  - php@8.2
+  - php@8.3
   - zsh
   - zsh-syntax-highlighting
 
-homebrew_casks: [] 
+homebrew_casks: 
+  - iterm2
+  - ngrok
+  - notion
+  - tableplus
+
