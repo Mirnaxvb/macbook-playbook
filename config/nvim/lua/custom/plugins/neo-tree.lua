@@ -9,5 +9,6 @@ return {
     },
     config = function ()
     	vim.keymap.set('n', '<leader>nn', ':Neotree filesystem reveal left<CR>', {})
+    	vim.keymap.set('n', '<leader>ng', ':Neotree float git_status<CR>', {})
     end
 }
