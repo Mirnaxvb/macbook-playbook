@@ -1,0 +1,4 @@
+return {
+    'vim-vdebug/vdebug'
+}
+

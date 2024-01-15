@@ -60,6 +60,9 @@ alias clean-evicted="kubectl get pods -n sam | grep "Evicted" | awk '{ print $1 
 # Phpstorm
 alias pstorm="open -a PhpStorm ./"
 
+# Python
+alias python="python3"
+
 # NeoVim
 alias nv="nvim"
 alias nvconfig="nvim ~/.config/nvim/init.vim"
