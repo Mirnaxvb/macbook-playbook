@@ -531,9 +531,5 @@ cmp.setup {
 -- Custom overrides
 require('keymap')
 vim.opt.swapfile = false
-require('monokai').setup {}
-require('monokai').setup { palette = require('monokai').pro }
-require('monokai').setup { palette = require('monokai').soda }
-require('monokai').setup { palette = require('monokai').ristretto }
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

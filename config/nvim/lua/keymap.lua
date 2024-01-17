@@ -7,4 +7,6 @@ vim.keymap.set('n', '<C-j>', '<C-w>j')
 -- Search files
 vim.keymap.set('n', '<leader><leader>', require('telescope.builtin').find_files)
 
+-- CRUD
+vim.keymap.set('n', '<leader>w', ':w<CR>')
 
