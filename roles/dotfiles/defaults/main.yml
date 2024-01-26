@@ -5,3 +5,4 @@ dotfiles_files:
   - .zshrc
   - .bash_aliases
   - .bash_funtions
+  - .tmux.conf
