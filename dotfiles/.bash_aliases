@@ -23,8 +23,9 @@ alias dxd82="mv /opt/homebrew/etc/php/8.2/conf.d/ext-xdebug.ini /opt/homebrew/et
 # Navigation
 alias code="cd ~/code"
 alias bert="cd ~/code/Projects/bert"
-alias sam="cd ~/code/Projects/sam-server"
-alias sam-client="cd ~/code/Projects/sam-server/sam-client"
+alias sam="cd ~/code/Projects/sam/sam-server"
+alias sam-client="cd ~/code/Projects/sam/sam-client"
+alias infra="cd ~/code/Infrastructure"
 alias portal="cd ~/code/Projects/portal.socialblue.com"
 alias tommie="cd ~/code/Projects/tommie"
 alias redirect="cd ~/code/Projects/redirect"

@@ -2,9 +2,6 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="$PATH:$HOME/.composer/vendor/bin:$PATH"
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-# Python 
-eval "$(pyenv init --path)"
-#eval "$(pyenv virtualenv-init -)"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/m.vanbalgooi/.oh-my-zsh"
@@ -76,14 +73,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  dotenv
-  macos
-  laravel
-  npm
-  docker
   kubectl
-  artisan
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
@@ -121,17 +111,17 @@ if [ -f ~/.bash_functions ]; then
 . ~/.bash_functions
 fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/m.vanbalgooi/Documents/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/m.vanbalgooi/Documents/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Applications/google-cloud-sdk/path.zsh.inc' ]; then . '/Applications/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/m.vanbalgooi/Documents/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/m.vanbalgooi/Documents/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Applications/google-cloud-sdk/completion.zsh.inc' ]; then . '/Applications/google-cloud-sdk/completion.zsh.inc'; fi
 
-source /Users/m.vanbalgooi/.docker/init-zsh.sh || true # Added by Docker Desktop
+# source /Users/m.vanbalgooi/.docker/init-zsh.sh || true # Added by Docker Desktop
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
