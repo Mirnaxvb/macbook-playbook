@@ -131,3 +131,6 @@ complete -o nospace -C /usr/local/bin/terraform terraform
 _foreground() { CURSOR=0 LBUFFER+=' fg % 2> /dev/null' && zle accept-line }
 zle -N _foreground
 bindkey '\CF' _foreground
+
+# Created by `pipx` on 2024-07-19 12:35:51
+export PATH="$PATH:/Users/m.vanbalgooi/.local/bin"
