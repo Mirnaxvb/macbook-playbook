@@ -7,7 +7,7 @@
 
 - name: Set php_executable variable to a default if not defined.
   set_fact:
-    php_executable: php
+    php_executable: /opt/homebrew/bin/php
   when: php_executable is not defined
 
 - name: Check if Composer is installed.
@@ -36,6 +36,7 @@
   when: not composer_bin.stat.exists
 
 - name: Move Composer into globally-accessible location.
+  become: true
   command: >
     mv /tmp/composer.phar {{ composer_path }}
     creates={{ composer_path }}

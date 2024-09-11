@@ -1,6 +1,5 @@
 ---
 homebrew_taps:
-  - homebrew/core
   - mongodb/brew
   - hashicorp/tap
 
@@ -37,4 +36,5 @@ homebrew_casks:
   - ngrok
   - notion
   - tableplus
-
+  - jetbrains-toolbox
+  - visual-studio-code

@@ -8,13 +8,12 @@
     - role: homebrew
       when: configure_homebrew
       tags: ['homebrew']
-    - role: composer
-      when: configure_composer
-      tags: ['composer']
     - role: dotfiles
       when: configure_dotfiles
       tags: ['dotfiles']
     - role: config
       when: configure_config
       tags: ['config']
- 
+    - role: composer
+      when: configure_composer
+      tags: ['composer'] 

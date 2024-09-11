@@ -16,9 +16,9 @@
 
 - name: Ensure configured taps are tapped.
   homebrew_tap:
-    tap: '{{ item.name | default(item) }}'
-    url: '{{ item.url | default(omit) }}'
-    state: present
+   tap: '{{ item.name | default(item) }}'
+   url: '{{ item.url | default(omit) }}'
+   state: present
   loop: "{{ homebrew_taps }}"
 
 - name: Installing Homebrew Packages
@@ -36,11 +36,11 @@
   until: result is successful
   when: homebrew_check.stat.exists
 
-# - name: Installing Homebrew Cask Packages
-#   homebrew_cask:
-#     name: "{{ item }}"
-#     state: latest
-#   loop: "{{ homebrew_casks }}"
-#   register: result
-#   until: result is successful
-#   when: homebrew_check.stat.exists
+- name: Installing Homebrew Cask Packages
+  homebrew_cask:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ homebrew_casks }}"
+  register: result
+  until: result is successful
+  when: homebrew_check.stat.exists
