@@ -11,5 +11,5 @@ composer_add_to_path: true
 
 composer_global_packages:
   - {name: laravel/valet, release: ^4.1}
-  - {name: laravel/installer, release: ^4.2}
+  - {name: laravel/installer, release: ^5.8}
 

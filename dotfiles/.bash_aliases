@@ -59,7 +59,7 @@ alias kproduction="kubectl config use-context production-cluster"
 alias clean-evicted="kubectl get pods -n sam | grep "Evicted" | awk '{ print $1 }' | xargs kubectl delete pod -n sam"
 
 # Phpstorm
-alias pstorm="open -a PhpStorm ./"
+alias pstorm="open -a PhpStorm ."
 
 # Python
 alias python="python3"

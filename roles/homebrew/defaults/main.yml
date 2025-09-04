@@ -5,6 +5,7 @@ homebrew_taps:
 
 homebrew_apps:
   - composer
+  - docker
   - mongosh
   - mongodb-community
   - nginx
@@ -30,11 +31,19 @@ homebrew_apps:
   - tmux
   - zsh
   - zsh-syntax-highlighting
+  - zsh-autosuggestions
+  - powerlevel10k
 
 homebrew_casks: 
   - iterm2
+  - docker
   - ngrok
   - notion
   - tableplus
   - jetbrains-toolbox
   - visual-studio-code
+  - raycast
+  - google-cloud-sdk
+  - 1password
+  - spotify
+  - flux
