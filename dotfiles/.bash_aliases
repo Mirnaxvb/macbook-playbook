@@ -31,10 +31,7 @@ alias tommie="cd ~/code/Projects/tommie"
 alias redirect="cd ~/code/Projects/redirect"
 alias tracker="cd ~/code/Projects/tracker"
 alias sherlock="cd ~/code/Projects/Sherlock/sherlock"
-alias tier1="cd ~/code/Projects/Sherlock/tier1"
-alias dev-box="cd ~/code/Projects/Sherlock/dev-box"
-alias sa-adr="cd ~/Documents/SoftwareArchitect/architectural-decision-records"
-alias larashell="cd ~/code/SideProjects/larashell"
+alias packages="/Users/m.vanbalgooi/code/Packages"
 
 # Docker
 alias dr="docker run -it --rm -v $(pwd):/var/www eu.gcr.io/socialblue-infrastructure/sam/phpunit:1.0.0 sh"
@@ -74,7 +71,3 @@ alias fix="php vendor/bin/ecs check --fix --config=vendor/socialblue/php-code-st
 alias ffix="php vendor/bin/ecs check --fix --config=vendor/socialblue/php-code-style/easy-coding-standard.php"
 alias stan="./vendor/bin/phpstan analyse app tests -c ../../Packages/php-code-style/phpstan.neon"
 alias stan-baseline="./vendor/bin/phpstan analyse --generate-baseline -c ../../Packages/php-code-style/phpstan.neon"
-
-
-
-cdl() { cd "$(lars path "$1")" || "Could not find project path with: '$1'"; }
